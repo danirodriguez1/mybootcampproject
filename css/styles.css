@@ -6,45 +6,278 @@
 /*font-family: 'Shadows Into Light Two', cursive;*/
 
 html, body {
-    width:100%;
-    height:100%;
-    margin:0px;
-    padding:0px;
+  width:100%;
+  height:100%;
+  margin:0px;
+  padding:0px;
 } 
 
 body {
-    background-color:#a6a6a6;
-    font-family: 'Source Sans Pro', Trebuchet MS, sans-serif;
-    font-size:16px;
+  background-color:#ad8585; 
+  font-size:16px;
 }
 
 h1, h2, h3 {
-    margin:0px;
-    padding:0px;
-    color:#660033; /* purple */
+  margin:0px;
+  padding:0px;
+  color:#85adad; 
 }
 
 p {
-    margin:15px 0px;
+  margin:15px 0px;
 }
 
 b, strong {
-    color:#660033; /* purple */
+  color:#85adad; 
 }
 
 a {
-    color:#660033;
-    text-decoration:none;
+  color:#85adad;
+  text-decoration:none;
 }
 
 a:hover {
-    color:#00994d; /* green */
+  color:#85adad; 
 }
 
-.mainWidth{
-    width:12px;
+.mainWidth {
+  margin:20px auto;
+  width:1200px;
+  font-size:30px;
 }
 
 /* ========== HEADER STYLES =========== */
+
+header {
+  background-color:#ad8585;
+  padding:5px 0px;
+}
+
+#innerHeader {
+  padding:5px 0px;
+/*   background-color:#F1F1F1; */
+}
+
+#logo a {
+  color:#85adad;
+}
+
+#logo a:hover {
+  color:#ad8585;
+}
+
+/*  NAVIGATION MENU STYLES  */
+
+#menu {
+  position:absolute;
+  top:20px;
+  right:20px;
+}
+
+#menu ul li {
+  display:inline;
+  margin:0px 10px;
+  text-align:center;
+  
+  padding:10px 25px;
+  background-color:#ffffff;
+  border-radius:8px;
+}
+
+.currentPage {
+  color:#ad8585;
+}
+
+/* ============== BANNERSTYLES =================== */
+
+#bannerHome {
+  overflow:hidden;
+  padding:200px 0px;
+  border-top: 3px solid #4dc3ff;
+  background:url(../images/banner-background2.jpg) no-repeat top center #8c8c8c;
+  background-size:cover;
+  text-align:center;
+}
+
+#bannerAbout {
+  overflow:hidden;
+  padding:200px 0px;
+  border-top: 3px solid #4dc3ff;
+  background:url() no-repeat top center #8585ad;
+  background-size:cover;
+  text-align:center;
+}
+
+#bannerContact {
+  overflow:hidden;
+  padding:200px 0px;
+  border-top: 3px solid #4dc3ff;
+  background:url() no-repeat top center #8585ad;
+  background-size:cover;
+  text-align:center;
+}
+
+.bannerText {
+  color:#ffffff;
+  font-size:5em;
+  text-align:center;
+  text-shadow:8px 8px 6px #ad8585;
+}
+
+.aboutButton {
+  background-color:#adad85;
+  padding:10px 20px;
+  margin:20px 0px;
+  color:#e6e6e6;
+  border-radius:5px;
+  text-transform:uppercase;
+  font-weight:800;
+  font-size:3.0em;
+  
+}
+
+/* ============= MAIN SECTION STYLES INC... COLUMNS ============= */
+
+.columnOne, .columnTwo, .columnThree {
+  width:384px;
+  float:left;
+}
+
+.columnOne, .columnTwo {
+  margin-right:24px;
+  
+}
+
+.columnOne h1, .columnTwo h1, .columnThree h1 {
+  font-size:1.5em;
+  font-weight:700;
+  text-align:center;
+  marigin:15px 0px;
+  font-family: 'Indie Flower', cursive;
+  color:#660000;
+}
+
+.columnOne p, .columnTwo p, .columnThree p {
+  text-align:justify;
+}
+
+/* =========== BUTTON STYLES ============== */
+
+.button {
+  background-color:#adad85;
+  padding:10px 20px;
+  margin:20px 0px;
+  color:#000000;
+  border-radius:5px;
+  border:3px dashed #e6e6e6;
+  text-transform:uppercase;
+  font-weight:900;
+  font-size:1em;
+  text-align:center;  
+  display:block;
+  font-family: 'Indie Flower', cursive;
+  display:block;
+}
+
+.columnOne span, .columnTwo span, .columnThree span {
+  background-color:#adad85;
+  color:#000000;
+  display:block;
+  font-size:1em;
+  font-weight:700;
+  margin:0px 0px 5px 0px;
+  padding:10px;
+  text-align:center;
+  text-transform:uppercase;    
+  font-family: 'Indie Flower', cursive;
+  display:block;
+}
+
+/* ==================== ABOUT SECTION STYLES ================ */
+
+#aboutMe {
+  margin:20px 0px;
+  display:inline-block;
+}
+
+.asideLeft {
+  width:384px;
+  float:left;
+  margin-right:24px;
+}
+
+.asideRight {
+  width:384px;
+  float:right;
+  margin-left:24px;
+}
+
+/* ============ FOOTER ============== */
+
+footer {
+  background-color:#ebebe0;
+  paddin:50px 0px;
+  border-top:4px dotted #b9b992;
+  text-align:center;
+  margin-top:15px;
+}
+
+.fa {
+  background-color:#ffef96;
+  borderr:3px solid #000000;
+  border-radius:50%;
+  color:#50394c;
+  text-align:center;
+  font-size:1.5em !important;
+  padding:20px;
+  margin:0px 15px;
+  height:28x;
+  width:28px;
+}
+
+.fa:hover {
+  background-color:#c94c4c;
+}
+
+.fa-facbook{background-color:#3B5998;}
+.fa-instagram{background-color:#3F729B;}
+.fa-linkedin{background-color:#686868;}
+.fa-twitter{background-color:#55ACEE;}
+.fa-github{background-color:#ffffff;}
+
+
+
+/* ====================== MISC STYLES ======================== */
+
+
+#edTrap {
+  width:90%; 
+  height:0px;
+  position:relative;
+  padding-bottom:56.25%;
+  padding-top:30px;
+  margin:0px auto;
+  overflow:hidden;
+}
+
+#edTrap iframe, #edTrap embed  {
+  position:absolute;
+  top:0px;
+  left:0px;
+  width:100%;
+  height:100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
